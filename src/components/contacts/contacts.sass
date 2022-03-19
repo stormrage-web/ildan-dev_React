@@ -1,0 +1,170 @@
+.about-contact
+  position: absolute
+  transform-style: preserve-3d
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  width: 1000px
+  height: 90%
+  position: fixed
+  background-color: transparent
+  overflow: hidden
+  visibility: hidden
+  z-index: -1
+  box-shadow: transparent
+  transition: visibility 1.5s,z-index 1.5s ,box-shadow .6s
+
+.contact-open
+  visibility: visible
+  z-index: 60
+  box-shadow: 0 20px 80px 0 rgba(0,0,0,.55)
+
+.half-contact
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 1
+  width: 50%
+  height: 100%
+  overflow: hidden
+  transition: transform .6s cubic-bezier(.694,.048,.335,1),opacity .45s,-webkit-transform .6s cubic-bezier(.694,.048,.335,1)
+
+.is-contact
+  background-color: rgba(28,29,37,.985)
+  color: #f3f3f3
+  left: auto
+  right: 0
+  transition-delay: .25s
+  transform: translateY(100%)
+
+.contact-open .half-contact
+  opacity: 1
+  transform: translateY(0)
+
+.is-about
+  background-color: hsla(0,0%,95%,.97)
+  transition-delay: .25s
+  transform: translateY(-100%)
+
+.contact-social
+  list-style: none
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.contact-social li a
+  & i
+    font-size: 32px
+
+.contact-info
+  width: 70%
+  padding: 50px 0
+  margin: 0 auto
+
+.contact-title
+  font-family: League Spartan,Helvetica,Arial,sans-serif
+  font-size: 28px
+  color: inherit
+  margin: 25px 0 0 0
+  padding-top: 0
+  padding-bottom: 0
+
+.contact-subtitle
+  font-family: Libre Baskerville,Palatino Linotype,Times New Roman,serif
+  color: inherit
+  margin: 0 0 10px 0
+  font-size: 14px
+
+.skills-subtitle
+  margin: 0
+  font-size: 18px
+
+.close
+  position: absolute
+  display: block
+  padding: 10px
+  top: 0
+  right: 25px
+  cursor: pointer
+  color: #fff
+  background-color: transparent
+  border: none
+  font-size: 64px
+  line-height: 50px
+  transition: all .3s ease
+  z-index: 10
+
+.giga-text
+  bottom: -30px
+  right: -200px
+  color: #fff
+  opacity: .03
+  font-size: 190px
+  position: absolute
+  font-family: League Spartan,Helvetica,Arial,sans-serif
+  z-index: -5
+
+.is-about .giga-text
+  top: -10px
+  left: 100px
+  color: #444
+
+.about-me-title
+  font-family: League Spartan,Helvetica,Arial,sans-serif
+  font-size: 28px
+  color: inherit
+  margin: 25px 0 0 0
+  padding-top: 0
+  padding-bottom: 0
+
+.about-me-subtitle
+  font-family: Libre Baskerville,Palatino Linotype,Times New Roman,serif
+  color: inherit
+  margin: 0 0 10px 0
+  font-size: 18px
+
+.about-me-text
+  margin-top: 20px
+  font-size: 14px
+  text-align: justify
+  font-family: Libre Baskerville,Palatino Linotype,Times New Roman,serif
+
+.about-me-list
+  margin: 0
+  margin-top: 35px
+  padding: 0
+  width: 100%
+  list-style: none
+  display: block
+
+.about-me-list li
+  float: left
+  clear: none
+  width: 22%
+  margin-left: 0
+  margin-right: 3%
+  position: relative
+  text-align: center
+  &:hover
+    .about-me-list-label
+      opacity: 1
+
+.about-me-list li .about-me-list-label
+  position: absolute
+  bottom: -25px
+  left: 0
+  width: 100%
+  transform: translateY(5px)
+  font-size: .75em
+  font-family: League Spartan,Helvetica,Arial,sans-serif
+  opacity: 0
+  transition: opacity .3s,transform .3s cubic-bezier(.694,.048,.335,1),-webkit-transform .3s cubic-bezier(.694,.048,.335,1)
+
+.about-me-list li svg, object
+  width: 60px
+  height: 60px
+  margin: 0 auto
+  display: block
+
+.about-me-text strong
+  color: #f06449
