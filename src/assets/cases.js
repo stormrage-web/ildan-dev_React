@@ -31,7 +31,7 @@ export let cases = [
     },
     {
         id: 3,
-        background: "./img/delivery.png",
+        background: "./img/delivery.jpg",
         number: "04",
         title: "Delivery food",
         description: [
